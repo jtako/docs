@@ -11,7 +11,7 @@ ms.assetid: a67884cc-1c4b-416b-8c96-5c954099f19f
 
 This tutorial describes the fourth of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-The next task for creating a WCF application is to create a client by retrieving metadata from a WCF service. You use Visual Studio to add a service reference, which gets the metadata from the service’s MEX endpoint. Visual Studio then generates a managed source code file for a client proxy in the language you've chosen. It also creates a client configuration file (*App.config*). This file enables the client application to connect to the service at an endpoint.
+The next task for creating a WCF application is to create a client by retrieving metadata from a WCF service. You use Visual Studio to add a service reference, which gets the metadata from the service’s metadata exchange (MEX) endpoint. Visual Studio then generates a managed source code file for a client proxy in the language you've chosen. It also creates a client configuration file (*App.config*). This file enables the client application to connect to the service at an endpoint.
 
 > [!NOTE]
 > If you call a WCF service from a class library project in Visual Studio, use the **Add Service Reference** feature to automatically generate a proxy and associated configuration file. However, because class library projects don't use this configuration file, you need to add the settings in the generated configuration file to the *App.config* file for the executable that calls the class library.
